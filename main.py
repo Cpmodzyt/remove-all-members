@@ -1,22 +1,14 @@
-'''
-this code by yeuda by https://t.me/m100achuz
-
-
-pip install Pyrogram
-https://github.com/pyrogram/pyrogram.git
-'''
-
 import os
 from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-app_id = int(os.environ.get("API_ID", 12345))
-app_key = os.environ.get('API_HASH')
-token = os.environ.get('BOT_TOKEN')
+# Added configuration variables
+app_id = '23023343'  # Your App API ID
+app_key = '2b79fd2d2c83173807a039325e7e166f'  # Your App API Hash
+token = '7713271630:AAE2u2H8YDGHZxw2OmdLF4KSJwyc5d_UC_I'  # Your Bot Token
 
 app = Client("remove", app_id, app_key, bot_token=token)
-
 
 STARTED = 'start removing users...'
 FINISH = 'done, {} users were removed from group'
